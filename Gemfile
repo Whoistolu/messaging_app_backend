@@ -14,6 +14,8 @@ gem "puma", "~> 5.0"
 
 gem 'devise'
 
+gem 'jwt'
+
 gem 'active_storage_validations'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
