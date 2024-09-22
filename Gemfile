@@ -16,6 +16,8 @@ gem 'devise'
 
 gem 'jwt'
 
+gem 'actioncable'
+
 gem 'active_storage_validations'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
