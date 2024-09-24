@@ -1,4 +1,6 @@
 class ChatRoomsController < ApplicationController
+   before_action :set_chat_room
+
    def index
       @chat_rooms = ChatRoom.all
       render json: @chat_rooms
