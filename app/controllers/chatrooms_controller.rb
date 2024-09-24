@@ -12,4 +12,14 @@ class ChatRoomsController < ApplicationController
          render json: @chat_room.errors, status: :unprocessable_entity
       end
    end
+
+   private
+
+   def set_chat_room
+     @chat_room = ChatRoom.find(params[:id])
+   end
+ 
+   def chat_room_params
+     params.require(:chat_room).permit(:name, :is_private)
+   end
 end
