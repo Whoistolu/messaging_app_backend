@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :chat_room_memberships, dependent: :destroy
   has_many :chat_rooms, through: :chat_room_memberships
+  has_many :messages
 end
