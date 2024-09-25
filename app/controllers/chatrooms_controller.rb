@@ -15,6 +15,11 @@ class ChatRoomsController < ApplicationController
       end
    end
 
+   def show
+      @messages = @chat_room.messages
+      render json: { chat_room: @chat_room, messages: @messages }
+    end
+
    private
 
    def set_chat_room
