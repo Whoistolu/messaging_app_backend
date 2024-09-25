@@ -13,5 +13,11 @@ class MessagesController < ApplicationController
       render json: @message.errors, status: :unprocessable_entity
     end
   end
-  
+
+  private
+
+  def message_params
+    params.require(:message).permit(:content)
+  end
+
 end
