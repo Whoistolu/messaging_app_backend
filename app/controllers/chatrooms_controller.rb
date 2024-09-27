@@ -6,16 +6,6 @@ class ChatRoomsController < ApplicationController
       render json: @chat_rooms
    end
 
-   def show
-      @messages = @chat_room.messages
-      render json: { chat_room: @chat_room, messages: @messages }
-   end
-
-   def destroy
-      @chat_room.destroy
-      head :no_content
-   end
-
    private
 
    def set_chat_room
