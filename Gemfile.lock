@@ -170,7 +170,6 @@ PLATFORMS
   arm64-darwin-23
 
 DEPENDENCIES
-  actioncable
   active_storage_validations
   bootsnap
   debug
