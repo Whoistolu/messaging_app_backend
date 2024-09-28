@@ -1,2 +1,0 @@
-class ChatRoomMembership < ApplicationRecord
-end
